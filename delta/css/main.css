@@ -1,0 +1,422 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+.contenedor{
+    max-width: 1200px;
+}
+h2,h3{
+    color: #003566;
+    font-weight:900;
+}
+
+button, .botonContacto, .botonServicio{
+    display: inline-flex;
+    background-color: transparent;
+    color: #003566;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding: 0.4rem;
+    width: 70%;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid;
+}
+
+button:hover, .botonContacto:hover, .botonServicio:hover{
+    background-color: #003566;
+    color: white;
+    transition: 0.5s;
+}
+
+header{
+    padding: 10px;
+    border-bottom: 2px #0573F9  solid; 
+}
+
+nav ul{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+nav a{
+    text-decoration: none;
+    color:#0573F9;
+    font-weight: bold;
+}
+
+.logo{
+    width: 100%;
+    min-width: 50px;
+    max-width: 50px;
+    justify-self: center;
+}
+.imgLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.imgSeccion1{
+    display: none;
+}
+
+.main{
+    display: grid;
+    grid-template-areas: "seccion1 seccion1"
+                         "seccion2 seccion2"
+                         "seccion3 seccion3";
+}
+
+.seccion1{
+    grid-area: seccion1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.tiSeccion1{
+    display: flex;
+    justify-content: flex-start;
+}
+.tSeccion1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #003566;
+}
+.pSeccion1{
+    font-size: 1.2rem;
+}
+
+
+.seccion2{
+    grid-area: seccion2;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.tServicios{
+    margin-bottom: 0.6rem;
+}
+.txtSeccion2{
+    margin-bottom: 0.6rem;
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont1{
+    margin: 1rem 0rem;
+    text-align: center;
+    width: 60%;
+    border-bottom: 2px #0573F9  solid;
+    padding-bottom: 2rem;
+}
+.cont1 h3,.cont1 p{
+    margin-bottom: 1rem;
+}
+
+.seccion3{
+    grid-area: seccion3;
+    padding: 1rem 2rem;
+}
+.tContactanos{
+    margin-bottom: 1rem;
+}
+.pContactanos{
+    margin-bottom: 1rem;
+}
+.pContactanos hr{
+    margin-top: 0.5rem;
+}
+.formulario{
+    padding: 1rem;
+}
+.formulario div{
+    margin-bottom: 1rem;
+}
+.formulario input, .formulario textarea{
+    width: 100%;
+    height: 2rem;
+}
+.formulario textarea{
+    min-height: 4rem;
+    max-height: 6rem;
+}
+
+footer{
+    border-top: 2px #0573F9 solid;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*SERVICIOS*/
+.tituloServicios{
+    text-align: center;
+    color: #003566;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.padreServicios{
+    display: grid;
+    grid-template-areas: "1 1"
+                         "2 2"
+                         "3 3"
+                         "4 4"
+                         "5 5";
+    justify-content: center;
+}
+
+.servicio1{
+    grid-area: 1;
+}
+.servicio2{
+    grid-area: 2;
+}
+.servicio3{
+    grid-area: 3;
+}
+.servicio4{
+    grid-area: 4;
+}
+.servicio5{
+    grid-area: 5;
+}
+
+.tipoServicio{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #0573F9 solid;
+}
+.tipoServicio1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #0573F9 solid;
+}
+.padreServicios .texto{
+    text-align: center;
+    width: 70%;
+}
+.imgServicio{
+    display: none;
+}
+.imgServicioMovil{
+    width: 100%;
+    max-width: 6rem;
+}
+.pServicio,.h2Servicio,.imgServicioMovil{
+    padding-bottom: 1rem;
+}
+.ultimoServicio{
+    border: none;
+}
+
+/*CLIENTES*/
+.tituloClientes{
+    color: #003566;
+    font-weight: bold;
+}
+
+/*NOSOTROS*/
+.tituloNosotros{
+    color: #003566;
+    font-weight: bold;
+}
+
+@media only screen and (min-width:600px){
+    .logo{
+        width: 100%;
+        min-width: 50px;
+        max-width: 50px;
+        justify-self: center;
+    }
+    .tiSeccion1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tSeccion1{
+        font-size: auto;
+    }
+   
+
+    .imgSeccion1{
+        display: block;
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .padreSeccion3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .formulario{
+        width: 100%;
+        max-width: 600px;
+    }
+    footer a{
+        margin: 0rem 1rem;
+    }
+
+    /*SERVICIOS*/
+    .imgServicioMovil{
+        width: 100%;
+        max-width: 8rem;
+    }
+
+    /*CLIENTES*/
+
+}
+
+@media only screen and (min-width:1024px){
+    .menuDesplegable{
+        display: none;
+    }
+    .contenedor{
+        margin: 0rem  auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 0;
+    }
+    .logo{
+        width: 100%;
+        min-width: 50px;
+        max-width: 50px;
+        justify-self: center;
+    }
+    .tiSeccion1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tSeccion1{
+        
+        font-size: 4rem;
+    }
+
+    .imgSeccion1{
+        display: block;
+        width: 40%;
+        max-width: 70%;
+    }
+    .padre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .txtSeccion2{
+        margin-bottom: 1.5rem;
+    }
+    .cont1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border: 0px;
+        height: 100%;
+        width: 20%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .padreSeccion3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    .pContactanos{
+        padding: 1rem;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer  a{
+        padding: 0rem 1rem;
+    };
+
+    /*SERVICIOS*/
+    .tituloServicios{
+        text-align: center;
+        color: #003566;
+        margin: 1rem;
+        font-size: 3rem;
+    }
+    .tipoServicio{
+        display: flex;
+        margin: 1rem 7rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px #0471FE solid;
+    }
+    
+    .tipoServicio1{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 1rem 7rem;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px #0471FE solid;
+    }
+    
+    .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        padding: 3rem;
+    }
+
+    .padreServicios .texto{
+        text-align: left;
+        width: 70%;
+    }
+
+    
+    .ContenedorimgServicio{
+        padding: 3rem;
+    }
+    
+    .imgServicioMovil{
+        display: none;
+    }
+    
+    .imgServicio{
+        display: block;
+        width: 100%;
+        max-width: 30rem;
+    }
+    .ultimoServicio{
+        border: none;
+    }
+}
