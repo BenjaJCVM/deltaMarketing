@@ -7,6 +7,9 @@
 .contenedor{
     max-width: 1200px;
 }
+.headerComun{
+    display: none;
+}
 h2,h3{
     color: #003566;
     font-weight:900;
@@ -14,7 +17,7 @@ h2,h3{
 span{
     display: block;
 }
-button, .botonContacto, .botonServicio{
+.botonInicio, .botonContacto, .botonServicio{
     display: inline-flex;
     background-color: transparent;
     color: #003566;
@@ -27,8 +30,7 @@ button, .botonContacto, .botonServicio{
     border-radius: 0.5rem;
     border: 1px solid;
 }
-
-button:hover, .botonContacto:hover, .botonServicio:hover{
+.botonInicio:hover, .botonContacto:hover, .botonServicio:hover{
     background-color: #003566;
     color: white;
     transition: 0.5s;
@@ -60,8 +62,6 @@ nav a{
 
 li:hover{
     color: #003566;
-    transition: 0.5s;
-    font-size: 1.04rem;
 }
 
 .logo{
@@ -170,6 +170,10 @@ footer{
     text-align: center;
 }
 
+footer a{
+    margin: 0rem 2rem;
+}
+
 /*SERVICIOS*/
 .tituloServicios{
     text-align: center;
@@ -250,7 +254,11 @@ footer{
     font-size: 3rem;
 }
 
+
+
 @media only screen and (min-width:600px){
+    .headerBoostrap{display: block;}
+    .headerComun{display: none;}
     .logo{
         width: 100%;
         min-width: 50px;
@@ -284,7 +292,7 @@ footer{
         max-width: 600px;
     }
     footer a{
-        margin: 0rem 1rem;
+        margin: 0rem 2rem;
     }
 
     /*SERVICIOS*/
@@ -298,6 +306,8 @@ footer{
 }
 
 @media only screen and (min-width:1024px){
+    .headerBoostrap{display: none;}
+    .headerComun{display: block;}
     .menuDesplegable{
         display: none;
     }
