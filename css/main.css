@@ -240,12 +240,14 @@ footer{
 .tituloClientes{
     color: #003566;
     font-weight: bold;
+    font-size: 3rem;
 }
 
 /*NOSOTROS*/
 .tituloNosotros{
     color: #003566;
     font-weight: bold;
+    font-size: 3rem;
 }
 
 @media only screen and (min-width:600px){
