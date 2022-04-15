@@ -159,6 +159,9 @@ li:hover{
     width: 100%;
     height: 2rem;
 }
+.paddingInput{
+    padding: 1rem;
+}
 .formulario textarea{
     min-height: 4rem;
     max-height: 6rem;
