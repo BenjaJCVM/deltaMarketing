@@ -11,7 +11,9 @@ h2,h3{
     color: #003566;
     font-weight:900;
 }
-
+span{
+    display: block;
+}
 button, .botonContacto, .botonServicio{
     display: inline-flex;
     background-color: transparent;
