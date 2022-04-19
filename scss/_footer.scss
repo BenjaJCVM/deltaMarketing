@@ -1,0 +1,15 @@
+@import "utilidades/variables";
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px $colorPrincipal solid;
+    padding: 1rem;
+    p{
+        margin: auto 0;
+    }
+    a{
+        padding: 0rem 2rem;
+    }
+}

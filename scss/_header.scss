@@ -1,0 +1,40 @@
+@import "utilidades/variables";
+
+.headerComun{
+    padding: 10px;
+    border-bottom: 2px $colorPrincipal solid;
+    .imgLogo{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .logo{
+            width: 100%;
+            min-width: 50px;
+            max-width: 50px;
+            justify-self: center;
+        }
+    }
+    .navComun{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ulComun{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0;
+            .aComun{
+                text-decoration: none;
+                color:$colorPrincipal;
+                font-weight: bold;
+                .liComun{
+                    list-style: none;
+                    margin: 1rem;
+                    padding: 0.5rem;
+                    border-radius: 0.4rem;
+                }
+            }
+        }
+    }
+}

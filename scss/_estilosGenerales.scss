@@ -1,0 +1,23 @@
+@import "utilidades/variables";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+h2,h3{
+    color: $colorSecundario;
+    font-weight:900;
+}
+
+.headerBoostrap{
+    display: none;
+}
+
+.tAzul{
+    text-align: center;
+    color: $colorSecundario;
+    margin: 1rem;
+    font-size: 3rem;
+}
