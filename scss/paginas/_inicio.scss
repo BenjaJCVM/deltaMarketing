@@ -1,103 +1,232 @@
 @import "utilidades/variables";
+@import "breakpoints";
+@import "contenedor";
 
-.mainInicio{
-    display: grid;
-    grid-template-areas: "seccion1 seccion1"
-                         "seccion2 seccion2"
-                         "seccion3 seccion3";
-    .seccion1{
-        grid-area: seccion1;
-        display: flex;
-        flex-direction: column;
+.contenedor {
+    .mainInicio {
+        display: grid;
+        grid-template-areas: "seccion1 seccion1"
+            "seccion2 seccion2"
+            "seccion3 seccion3";
+
+
         padding: 1rem 2rem;
-        .tiSeccion1{
+
+        .seccion1 {
+
+            grid-area: seccion1;
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .tSeccion1{
-                margin-bottom: 1rem;
-                font-size: 4rem;
-                color: $colorSecundario;
-                span{
-                    display: block;
-                }
-            }
-            .imgSeccion1{
-                display: block;
-                width: 40%;
-                max-width: 70%;
-            }
-        }
-        .pSeccion1{
-            font-size: 1.2rem;
-        }
-    }
-    .seccion2{
-        grid-area: seccion2;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 2rem;
-        .tServicios{
-            margin-bottom: 0.6rem;
-        }
-        .txtSeccion2{
-            margin-bottom: 1.5rem;
-        }
-        .padre{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            .cont1{
+            flex-direction: column;
+
+
+            @include media-up(md) {
+                grid-area: seccion1;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: flex-end;
-                text-align: center;
-                border: 0px;
-                height: 100%;
-                width: 20%;
-                margin: 1rem;
-                padding: 1rem;
             }
-        }
-    }
-    .seccion3{
-        grid-area: seccion3;
-        padding: 1rem 2rem;
-        .tContactanos{
-            margin-bottom: 1rem;
-        }
-        .padreSeccion3{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items:flex-start;
-            .pContactanos{
-                padding: 1rem;
-                hr{
-                    margin-bottom: 0.5rem;
+
+            .tiSeccion1 {
+
+                display: flex;
+                justify-content: flex-start;
+
+                @include media-up(md) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+
+
+                .tSeccion1 {
+
+                    margin-bottom: 1rem;
+                    font-size: 3rem;
+                    color: $colorSecundario;
+
+
+                    @include media-up(md) {
+                        font-size: 3rem;
+                    }
+
+                    @include media-up(lg) {
+                        font-size: 4rem;
+                        margin-bottom: 1rem;
+                        color: $colorSecundario;
+                    }
+
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                .imgSeccion1 {
+
+                    display: none;
+
+
+                    @include media-up(md) {
+                        display: block;
+                        width: 50%;
+                        max-width: 100%;
+                    }
+
+                    @include media-up(lg) {
+                        width: 50%;
+                        max-width: 100%;
+                    }
                 }
             }
-            .formulario{
-                width: 100%;
-                max-width: 600px;
-                padding: 1rem;
-                div{
-                    margin-bottom: 1rem;
-                    .paddingInput{
-                        width: 100%;
-                        height: 2rem;
+
+            .pSeccion1 {
+
+                font-size: 1.2rem;
+
+
+                @include media-up(md) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .seccion2 {
+            grid-area: seccion2;
+            display: flex;
+            flex-direction: column;
+
+            @include media-up(md) {
+                grid-area: seccion2;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .tServicios {
+                text-align: start;
+                margin-bottom: 0.6rem;
+
+
+                @include media-up(md) {
+                    margin-bottom: 0.6rem;
+                }
+            }
+
+            .txtSeccion2 {
+
+                margin-bottom: 0.6rem;
+
+
+                @include media-up(md) {
+                    margin-bottom: 0.6rem;
+                }
+            }
+
+            .padre {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @include media-up(md) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @include media-up(lg) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
+
+                .cont1 {
+                    margin: 1rem 0rem;
+                    text-align: center;
+                    width: 70%;
+                    border-bottom: 2px $colorPrincipal solid;
+                    padding-bottom: 2rem;
+
+                    @include media-up(md) {
+                        margin: 1rem 0rem;
+                        text-align: center;
+                        width: 70%;
+                        border-bottom: 2px $colorPrincipal solid;
+                        padding-bottom: 2rem;
+                    }
+
+                    @include media-up(lg) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        text-align: center;
+                        border: 0px;
+                        height: 100%;
+                        width: 20%;
+                        margin: 1rem;
                         padding: 1rem;
                     }
-                    textarea{
-                        width: 100%;
-                        height: 2rem;
-                        min-height: 4rem;
-                        max-height: 6rem;
+
+                }
+            }
+        }
+
+        .seccion3 {
+            grid-area: seccion3;
+
+            .tContactanos {
+                margin-bottom: 1rem;
+            }
+
+            .padreSeccion3 {
+                flex-direction: column;
+                align-items: center;
+
+                @include media-up(md) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                @include media-up(lg) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .pContactanos {
+                    padding: 1rem;
+
+                    hr {
+                        margin-bottom: 0.5rem;
                     }
-                    input{
-                        width: 100%;
+                }
+
+                .formulario {
+                    width: 100%;
+                    max-width: 600px;
+                    padding: 1rem;
+
+                    div {
+                        margin-bottom: 1rem;
+
+                        .paddingInput {
+                            width: 100%;
+                            height: 2rem;
+                            padding: 1rem;
+                        }
+
+                        textarea {
+                            width: 100%;
+                            height: 2rem;
+                            min-height: 4rem;
+                            max-height: 6rem;
+                        }
+
+                        input {
+                            width: 100%;
+                        }
                     }
                 }
             }

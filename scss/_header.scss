@@ -1,38 +1,75 @@
 @import "utilidades/variables";
+@import "breakpoints";
 
-.headerComun{
-    padding: 10px;
+.headerComun {
+
+    display: none;
+
+    @include media-up(lg) {
+        display: block;
+    }
+
+    padding: 0.8rem;
     border-bottom: 2px $colorPrincipal solid;
-    .imgLogo{
+
+    .imgLogo {
         display: flex;
         justify-content: space-between;
-        align-items:center;
-        .logo{
+        align-items: center;
+
+        .logo {
             width: 100%;
             min-width: 50px;
             max-width: 50px;
             justify-self: center;
         }
     }
-    .navComun{
+
+    .navComun {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .ulComun{
+
+        .ulComun {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 0.5rem;
             margin-bottom: 0;
-            .aComun{
+
+            .aComun {
                 text-decoration: none;
-                color:$colorPrincipal;
+                color: $colorPrincipal;
                 font-weight: bold;
-                .liComun{
+
+                .liComun {
                     list-style: none;
                     margin: 1rem;
                     padding: 0.5rem;
                     border-radius: 0.4rem;
+                }
+            }
+        }
+    }
+}
+
+.headerBoostrap {
+    padding: 0.7rem;
+    border-bottom: 2px $colorPrincipal solid;
+    display: block;
+    
+    @include media-up(lg) {
+        display: none;
+    }
+
+    nav {
+        div {
+            a {
+                .logo {
+                    width: 100%;
+                    min-width: 50px;
+                    max-width: 50px;
+                    justify-self: center;
                 }
             }
         }

@@ -1,15 +1,29 @@
 @import "utilidades/variables";
+@import "breakpoints";
 
-footer{
+footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-top: 2px $colorPrincipal solid;
     padding: 1rem;
-    p{
-        margin: auto 0;
+
+    @include media-up(md) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
-    a{
+
+    p {
+        margin: auto 0;
+        padding-bottom: 1rem;
+        @include media-up(md){
+            padding-bottom: 0rem;
+        }
+    }
+
+    a {
         padding: 0rem 2rem;
     }
 }
