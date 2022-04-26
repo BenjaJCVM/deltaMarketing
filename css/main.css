@@ -62,6 +62,8 @@ h2, h3 {
     min-width: 50px;
     max-width: 50px;
     justify-self: center; }
+  .headerBoostrap nav div div {
+    text-align: center; }
 
 footer {
   display: flex;
@@ -453,6 +455,15 @@ footer {
       .seccion3 .padreSeccion3 .formulario div input {
         width: 100%; }
 
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+@im;
 .botonInicio, .botonContacto, .botonServicio {
   display: inline-flex;
   background-color: transparent;
