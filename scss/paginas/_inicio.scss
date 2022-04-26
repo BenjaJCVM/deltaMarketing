@@ -1,13 +1,14 @@
 @import "utilidades/variables";
 @import "breakpoints";
 @import "contenedor";
+@import "estilosGenerales";
 
 .contenedor {
     .mainInicio {
         display: grid;
         grid-template-areas: "seccion1 seccion1"
-            "seccion2 seccion2"
-            "seccion3 seccion3";
+                             "seccion2 seccion2"
+                             "seccion3 seccion3";
 
 
         padding: 1rem 2rem;
