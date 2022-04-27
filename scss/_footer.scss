@@ -22,8 +22,12 @@ footer {
             padding-bottom: 0rem;
         }
     }
-
-    a {
-        padding: 0rem 2rem;
+    .footerIconos{
+        display: flex;
+        justify-content: space-around;
+        a {
+            padding: 0rem 1rem;
+        }
     }
+    
 }

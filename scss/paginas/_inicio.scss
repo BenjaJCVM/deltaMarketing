@@ -39,25 +39,17 @@
 
 
                 .tSeccion1 {
-
                     margin-bottom: 1rem;
                     font-size: 3rem;
                     color: $colorSecundario;
 
-
                     @include media-up(md) {
-                        font-size: 3rem;
+                        font-size: 3.5rem;
                     }
 
                     @include media-up(lg) {
-                        font-size: 4rem;
+                        font-size: 4.5rem;
                         margin-bottom: 1rem;
-                        color: $colorSecundario;
-                    }
-
-
-                    span {
-                        display: block;
                     }
                 }
 
@@ -82,7 +74,7 @@
             .pSeccion1 {
 
                 font-size: 1.2rem;
-
+                padding-bottom: 1rem;
 
                 @include media-up(md) {
                     font-size: 1.2rem;
@@ -170,6 +162,9 @@
                     }
 
                 }
+                .quintoServicio{
+                    border-bottom: none;
+                }
             }
         }
 
@@ -177,7 +172,7 @@
             grid-area: seccion3;
 
             .tContactanos {
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
             }
 
             .padreSeccion3 {

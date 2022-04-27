@@ -1,12 +1,10 @@
 @import "utilidades/variables";
 @import "breakpoints";
+@import "estilosGenerales";
 
 .mainServicios {
     .tituloServicios {
-        text-align: center;
-        color: $colorSecundario;
-        margin: 1rem;
-        font-size: 3rem;
+        @extend .tituloPrincipal;
     }
 
     .padreServicios {

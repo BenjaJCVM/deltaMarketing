@@ -1,1 +1,10 @@
 @import "contenedor";
+@import "estilosGenerales";
+
+.container{
+    div{
+        .tituloNosotros{
+            @extend .tituloPrincipal;
+        }
+    }
+}

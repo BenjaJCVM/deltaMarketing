@@ -9,13 +9,16 @@
 
 h2,h3{
     color: $colorSecundario;
-    font-weight:900;
+    font-weight: 400;
 }
 
-
-.tAzul{
+.tituloPrincipal{
     text-align: center;
     color: $colorSecundario;
     margin: 1rem;
     font-size: 3rem;
+}
+
+span {
+    display: block;
 }

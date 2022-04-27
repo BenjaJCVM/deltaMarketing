@@ -1,12 +1,14 @@
 @import "utilidades/variables";
 @import "breakpoints";
+@import "estilosGenerales";
 
 .seccion3 {
-    .tContactanos {
-        margin-bottom: 1rem;
+    .tituloContactanos {
+        @extend .tituloPrincipal;
     }
 
     .padreSeccion3 {
+        padding: 2rem;
         flex-direction: column;
         align-items: center;
 
