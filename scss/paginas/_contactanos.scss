@@ -15,14 +15,14 @@
         @include media-up(md) {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-start;
         }
 
         @include media-up(lg) {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-start;
         }
 
@@ -38,7 +38,6 @@
             width: 100%;
             max-width: 600px;
             padding: 1rem;
-            margin: 0 auto;
 
             div {
                 margin-bottom: 1rem;

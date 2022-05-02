@@ -162,7 +162,7 @@
                     }
 
                 }
-                .quintoServicio{
+                .cuartoServicio{
                     border-bottom: none;
                 }
             }
@@ -180,20 +180,22 @@
                 align-items: center;
 
                 @include media-up(md) {
-                    flex-direction: column;
-                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: flex-start
                 }
 
                 @include media-up(lg) {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     align-items: flex-start;
                 }
 
                 .pContactanos {
                     padding: 1rem;
-
+                    font-size: 1.15rem;
                     hr {
                         margin-bottom: 0.5rem;
                     }

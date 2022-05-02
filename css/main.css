@@ -8,6 +8,9 @@ h2, h3 {
   color: #003566;
   font-weight: 400; }
 
+p {
+  font-size: 1.15rem; }
+
 .tituloPrincipal, .mainServicios .tituloServicios, .seccion3 .tituloContactanos, .container div .tituloNosotros, .container div .tituloClientes {
   text-align: center;
   color: #003566;
@@ -52,6 +55,9 @@ span {
           margin: 1rem;
           padding: 0.5rem;
           border-radius: 0.4rem; }
+          .headerComun .navComun .ulComun .aComun .liComun:hover {
+            color: #003566;
+            transition: 0.6s; }
 
 .headerBoostrap {
   padding: 0.7rem;
@@ -60,11 +66,18 @@ span {
   @media screen and (min-width: 1024px) {
     .headerBoostrap {
       display: none; } }
-  .headerBoostrap nav div a .logo {
-    width: 100%;
-    min-width: 50px;
-    max-width: 50px;
-    justify-self: center; }
+  .headerBoostrap nav div a {
+    font-size: 1.15rem;
+    color: #0573F9;
+    font-weight: bold; }
+    .headerBoostrap nav div a:hover {
+      color: #003566;
+      transition: 0.6s; }
+    .headerBoostrap nav div a .logo {
+      width: 100%;
+      min-width: 50px;
+      max-width: 50px;
+      justify-self: center; }
   .headerBoostrap nav div div {
     text-align: center; }
 
@@ -109,6 +122,9 @@ footer {
 h2, h3 {
   color: #003566;
   font-weight: 400; }
+
+p {
+  font-size: 1.15rem; }
 
 .tituloPrincipal, .mainServicios .tituloServicios, .seccion3 .tituloContactanos, .container div .tituloNosotros, .container div .tituloClientes {
   text-align: center;
@@ -230,7 +246,7 @@ span {
             width: 20%;
             margin: 1rem;
             padding: 1rem; } }
-      .contenedor .mainInicio .seccion2 .padre .quintoServicio {
+      .contenedor .mainInicio .seccion2 .padre .cuartoServicio {
         border-bottom: none; }
   .contenedor .mainInicio .seccion3 {
     grid-area: seccion3; }
@@ -241,16 +257,19 @@ span {
       align-items: center; }
       @media screen and (min-width: 768px) {
         .contenedor .mainInicio .seccion3 .padreSeccion3 {
-          flex-direction: column;
-          align-items: center; } }
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-start; } }
       @media screen and (min-width: 1024px) {
         .contenedor .mainInicio .seccion3 .padreSeccion3 {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: flex-start; } }
       .contenedor .mainInicio .seccion3 .padreSeccion3 .pContactanos {
-        padding: 1rem; }
+        padding: 1rem;
+        font-size: 1.15rem; }
         .contenedor .mainInicio .seccion3 .padreSeccion3 .pContactanos hr {
           margin-bottom: 0.5rem; }
       .contenedor .mainInicio .seccion3 .padreSeccion3 .formulario {
@@ -281,6 +300,9 @@ h2, h3 {
   color: #003566;
   font-weight: 400; }
 
+p {
+  font-size: 1.15rem; }
+
 .tituloPrincipal, .mainServicios .tituloServicios, .seccion3 .tituloContactanos, .container div .tituloNosotros, .container div .tituloClientes {
   text-align: center;
   color: #003566;
@@ -292,7 +314,7 @@ span {
 
 .mainServicios .padreServicios {
   display: grid;
-  grid-template-areas: "1 1" "2 2" "3 3" "4 4" "5 5";
+  grid-template-areas: "1 1" "2 2" "3 3" "4 4";
   justify-content: center; }
   .mainServicios .padreServicios .servicio1 {
     grid-area: 1; }
@@ -302,8 +324,6 @@ span {
     grid-area: 3; }
   .mainServicios .padreServicios .servicio4 {
     grid-area: 4; }
-  .mainServicios .padreServicios .servicio5 {
-    grid-area: 5; }
   .mainServicios .padreServicios .tipoServicio {
     display: flex;
     justify-content: center;
@@ -340,24 +360,21 @@ span {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          font-size: 1.2rem;
           padding: 3rem; } }
       .mainServicios .padreServicios .tipoServicio .texto .imgServicioMovil {
         display: block;
         width: 100%;
-        max-width: 6rem;
+        max-width: 8rem;
         padding-bottom: 1rem; }
         @media screen and (min-width: 768px) {
           .mainServicios .padreServicios .tipoServicio .texto .imgServicioMovil {
             display: block;
-            max-width: 8rem;
+            max-width: 9rem;
             width: 100%;
             padding-bottom: 1rem; } }
         @media screen and (min-width: 1024px) {
           .mainServicios .padreServicios .tipoServicio .texto .imgServicioMovil {
             display: none; } }
-      .mainServicios .padreServicios .tipoServicio .texto .pServicio {
-        font-size: 1rem; }
       .mainServicios .padreServicios .tipoServicio .texto .pServicio,
       .mainServicios .padreServicios .tipoServicio .texto .h2Servicio {
         padding-bottom: 1rem; }
@@ -413,24 +430,21 @@ span {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          font-size: 1.2rem;
           padding: 3rem; } }
       .mainServicios .padreServicios .tipoServicio1 .texto .imgServicioMovil {
         display: block;
         width: 100%;
-        max-width: 6rem;
+        max-width: 8rem;
         padding-bottom: 1rem; }
         @media screen and (min-width: 768px) {
           .mainServicios .padreServicios .tipoServicio1 .texto .imgServicioMovil {
             display: block;
-            max-width: 8rem;
+            max-width: 9rem;
             width: 100%;
             padding-bottom: 1rem; } }
         @media screen and (min-width: 1024px) {
           .mainServicios .padreServicios .tipoServicio1 .texto .imgServicioMovil {
             display: none; } }
-      .mainServicios .padreServicios .tipoServicio1 .texto .pServicio {
-        font-size: 1rem; }
       .mainServicios .padreServicios .tipoServicio1 .texto .pServicio,
       .mainServicios .padreServicios .tipoServicio1 .texto .h2Servicio {
         padding-bottom: 1rem; }
@@ -462,6 +476,9 @@ h2, h3 {
   color: #003566;
   font-weight: 400; }
 
+p {
+  font-size: 1.15rem; }
+
 .tituloPrincipal, .mainServicios .tituloServicios, .seccion3 .tituloContactanos, .container div .tituloNosotros, .container div .tituloClientes {
   text-align: center;
   color: #003566;
@@ -479,13 +496,13 @@ span {
     .seccion3 .padreSeccion3 {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-start; } }
   @media screen and (min-width: 1024px) {
     .seccion3 .padreSeccion3 {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: flex-start; } }
   .seccion3 .padreSeccion3 .pContactanos {
     padding: 1rem; }
@@ -494,8 +511,7 @@ span {
   .seccion3 .padreSeccion3 .formulario {
     width: 100%;
     max-width: 600px;
-    padding: 1rem;
-    margin: 0 auto; }
+    padding: 1rem; }
     .seccion3 .padreSeccion3 .formulario div {
       margin-bottom: 1rem; }
       .seccion3 .padreSeccion3 .formulario div .paddingInput {
@@ -524,6 +540,9 @@ h2, h3 {
   color: #003566;
   font-weight: 400; }
 
+p {
+  font-size: 1.15rem; }
+
 .tituloPrincipal, .mainServicios .tituloServicios, .seccion3 .tituloContactanos, .container div .tituloNosotros, .container div .tituloClientes {
   text-align: center;
   color: #003566;
@@ -546,6 +565,9 @@ span {
 h2, h3 {
   color: #003566;
   font-weight: 400; }
+
+p {
+  font-size: 1.15rem; }
 
 .tituloPrincipal, .mainServicios .tituloServicios, .seccion3 .tituloContactanos, .container div .tituloNosotros, .container div .tituloClientes {
   text-align: center;
